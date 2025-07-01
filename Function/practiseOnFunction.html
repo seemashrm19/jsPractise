@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    function isOdd(num) {
+      let result = num % 2 == 1
+      return result
+    }
+
+    console.log(isOdd(5));
+    console.log(isOdd(10));
+    console.log(isOdd(15));
+
+    console.log("**************  ***************");
+
+
+    function isEven(num) {
+      let result = num % 2 == 0
+      return result
+    }
+
+    console.log("Even \n" + isEven(5));
+    console.log(isEven(10));
+    console.log(isEven(15));
+
+
+
+    function isGreater(num1, num2) {
+      if (num1 > num2) {
+        return num1
+      } else {
+        return num2
+      }
+    }
+
+    console.log("************** isGreater ***************");
+
+    console.log(isGreater(20, 22));
+
+
+  </script>
+</body>
+
+</html>

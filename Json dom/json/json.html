@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // let product = {
+    //   name: 'Tshirt',
+    //   price: 899,
+    //   rating: {
+    //     stars: 4.5,
+    //     noOfReview: 456,
+    //   }
+    // }
+
+
+    // console.log(product);
+    // console.log(typeof product);
+
+    // let newProduct = JSON.stringify(product)
+
+    // console.log(typeof newProduct);
+
+
+    // console.log(`newProduct = ${newProduct}`);
+
+    // let newProduct1 = JSON.parse(newProduct)
+
+    // console.log(newProduct1);
+
+    // console.log(typeof newProduct1);
+
+    // Local Storage
+
+    // localStorage.setItem('Name', "Seema")
+    // localStorage.setItem('Price', 677)
+    console.log(localStorage.getItem('Name'));
+
+
+    let product = {
+      name: 'Tshirt',
+      price: 899,
+      rating: {
+        stars: 4.5,
+        noOfReview: 456,
+      }
+    }
+
+    localStorage.setItem('product', JSON.stringify(product))
+
+    let product1 = JSON.parse(localStorage.getItem('product'));
+
+    console.log(product1);
+
+    localStorage.removeItem('Price')
+
+    localStorage.clear('product')
+
+  </script>
+</body>
+
+</html>
